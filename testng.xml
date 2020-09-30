@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Flipkart Automation">
+    <listeners>
+        <listener
+            class-name="Extent_Report_Package.ExtentReporterNG"/>
+    </listeners>
+
+    <test name="C:/Users/HP/IdeaProjects/Flipkart_Project_Automation/src/test/java">
+
+        <parameter name="url" value="https://www.flipkart.com/"/>
+        <parameter name="emailid" value="9400795605"/>
+        <parameter name="password" value="kollam28$$"/>
+        <parameter name="email_id" value="9400795605"/>
+        <parameter name="pass_word" value="kllam28$$"/>
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <class  name="Flipkart_Login.User_Login"/>
+            <class name="Flipkart_Login.SearchPage"/>
+            <class name="Flipkart_Login.Delete_Cart"/>
+            <class name="Flipkart_Login.Sorted_List"/>
+            <class name="Flipkart_Login.Pincode_Test"/>
+            <class name="Flipkart_Login.Valid_Pincode"/>
+            <class name="Flipkart_Login.Wish_list"/>
+            <class name="Flipkart_Login.registered_address"/>
+            <class name="Flipkart_Login.Login_Function"/>
+            <class name="Flipkart_Login.LoginFail_Function"/>
+<!--            -->
+        </classes>
+    </test>
+</suite>
